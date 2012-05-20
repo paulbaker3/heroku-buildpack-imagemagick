@@ -12,7 +12,7 @@ config_vars:
   PYTHONUNBUFFERED: true
   LIBRARY_PATH: /app/.heroku/vendor/lib
   LD_LIBRARY_PATH: /app/.heroku/vendor/lib:/app/im/lib
-  MAGICK_HOME=/app/im
+  MAGICK_HOME: /app/im
   LANG: en_US.UTF-8
   PYTHONHASHSEED: random
   PYTHONHOME: /app/.heroku/venv/
