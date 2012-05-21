@@ -4,6 +4,8 @@ Heroku buildpack: Python
 This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) for Python apps.
 It uses [virtualenv](http://www.virtualenv.org/) and [pip](http://www.pip-installer.org/).
 
+It also installs a custom copy of ImageMagick to /app/im and includes it in the default paths.
+
 [![Build Status](https://secure.travis-ci.org/heroku/heroku-buildpack-python.png?branch=master)](http://travis-ci.org/heroku/heroku-buildpack-python)
 
 Usage
@@ -21,6 +23,7 @@ Example usage:
     -----> Heroku receiving push
     -----> Fetching custom build pack... done
     -----> Python app detected
+    -----> Bundling ImageMagick version 6.7.7-0
     -----> Preparing virtualenv version 1.6.4
            New python executable in ./bin/python
            Installing setuptools............done.
