@@ -1,3 +1,8 @@
+
+## v7 (01/29/2012)
+
+* Strippped everything out except ImageMagick components
+
 ## v6 (03/23/2012)
 
 Features:
