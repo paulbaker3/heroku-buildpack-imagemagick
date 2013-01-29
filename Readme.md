@@ -10,4 +10,4 @@ Usage
 
 Example usage:
 
-    $ heroku config:add BUILDPACK_URL=git@github.com:lemurheavy/heroku-buildpack-imagemagick.git
+    $ heroku config:add BUILDPACK_URL=https://github.com/lemurheavy/heroku-buildpack-imagemagick

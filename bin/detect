@@ -1,4 +1,4 @@
 #!/bin/sh
 
-echo "Ruby"
+echo "Ruby/Rails"
 exit 0
