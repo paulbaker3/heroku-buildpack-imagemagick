@@ -54,7 +54,7 @@ mkdir -p $IM_LOCATION
 
 # Install ImageMagick
 IM_VERSION="6.8.0-10"
-IM_URL="https://assets.tandemstock.com.s3.amazonaws.com/im-$IM_VERSION.tar.gz"
+IM_URL="https://assets.tandemstock.com.s3.amazonaws.com/im-$IM_VERSION.tar"
 puts-step "Bundling ImageMagick version $IM_VERSION"
 curl --silent --max-time 60 --location "$IM_URL" | tar xz
 
@@ -62,6 +62,6 @@ curl --silent --max-time 60 --location "$IM_URL" | tar xz
 UFRAW_VERSION="0.18"
 UFRAW_URL="https://download-pixelapse.s3.amazonaws.com/ufraw-bin-$UFRAW_VERSION.tar.gz"
 puts-step "Bundling ufraw version $UFRAW_VERSION"
-curl --silent --max-time 300 --location "$UFRAW_URL" | tar xz -C $IM_LOCATION
+curl --silent --max-time 60 --location "$UFRAW_URL" | tar xz -C $IM_LOCATION
 
 export PATH=:/app/im/bin:/local/bin:$PATH
