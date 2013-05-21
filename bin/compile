@@ -54,8 +54,8 @@ mkdir -p $IM_LOCATION
 
 # Install ImageMagick
 IM_VERSION="6.7.8-8"
-IM_URL="https://download-pixelapse.s3.amazonaws.com/im-$IM_VERSION.tar.gz"
-puts-step "Bundling ImageMagick version $IM_VERSION"
+IM_URL="https://s3.amazonaws.com/download-pixelapse/im-$IM_VERSION.tar.gz"
+puts-step "Bundling ImageMagick version $IM_VERSION from $IM_URL"
 curl --silent --max-time 60 --location "$IM_URL" | tar xz
 
 # ufraw dependency
