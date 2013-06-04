@@ -8,7 +8,7 @@ NAME=$($BIN_DIR/detect $BUILD_DIR) || exit 1
 cat <<EOF
 ---
 config_vars:
-  PATH: /app/im/bin:/bin:/usr/local/bin:/usr/bin
+  PATH: /app/im/bin:$PATH
   LD_LIBRARY_PATH: /app/im/lib
   MAGICK_HOME: /app/im
   LANG: en_US.UTF-8
