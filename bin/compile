@@ -60,8 +60,8 @@ curl --silent --max-time 60 --location "$IM_URL" | tar xz
 
 # ufraw dependency
 UFRAW_VERSION="0.18"
-UFRAW_URL="https://download-pixelapse.s3.amazonaws.com/ufraw-bin-$UFRAW_VERSION.tar.gz"
+UFRAW_URL="https://assets.tandemstock.com.s3.amazonaws.com/ufraw-0.19.tgz"
 puts-step "Bundling ufraw version $UFRAW_VERSION"
-curl --silent --max-time 60 --location "$UFRAW_URL" | tar xz -C $IM_LOCATION
+curl --silent --max-time 60 --location "$UFRAW_URL" | gzip | tar xz -C $IM_LOCATION
 
 export PATH=:/app/im/bin:/local/bin:$PATH
