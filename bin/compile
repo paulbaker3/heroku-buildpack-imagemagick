@@ -53,10 +53,10 @@ IM_LOCATION="im"
 mkdir -p $IM_LOCATION
 
 # Install ImageMagick
-# IM_VERSION="6.8.6-6"
-# IM_URL="https://assets.tandemstock.com.s3.amazonaws.com/im-$IM_VERSION.tar.gz"
-# puts-step "Bundling ImageMagick version $IM_VERSION"
-# curl --silent --max-time 120 --location "$IM_URL" | tar xz
+IM_VERSION="6.8.6-6"
+IM_URL="https://assets.tandemstock.com.s3.amazonaws.com/im-$IM_VERSION.tar.gz"
+puts-step "Bundling ImageMagick version $IM_VERSION"
+curl --silent --max-time 120 --location "$IM_URL" | tar xz
 
 # Install GraphicsMagick
 GM_VERSION="1.3.18"
